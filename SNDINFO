@@ -1,0 +1,12 @@
+//Directly taken from NuclearMissile.wad
+
+Weapons/NuclearMissileCharge	dsnukcrg
+Weapons/NuclearMissileExplode	dsnukxpl
+Weapons/NuclearMissileBurn	dsnukbrn
+Weapons/NuclearMissileFlameHit	dsflwexp
+Weapons/NuclearMissileFlameWall	dsflwgrn
+
+//My own additions
+
+Weapons/Beep BEEP
+Weapons/Shockwave shokwave

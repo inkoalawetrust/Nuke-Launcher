@@ -1,0 +1,12 @@
+DoomEdNums
+{
+	18372 = NuclearMissileLauncher
+	18373 = NuclearMissile
+	28374 = NuclearCyberdemon
+}
+
+DamageType "RadiationSickness"
+{
+	NoArmor
+	Obituary = "%o died from radiation poisoning."
+}

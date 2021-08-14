@@ -1,0 +1,93 @@
+//Taken from NuclearMissile.wad, modified by inkoalaetrust.
+
+PointLight NUKEROCKET
+{
+    Color 1.0 0.7 0.0
+    Size 56
+	Attenuate 1 //True
+}
+
+FlickerLight NUKEROCKET_X1
+{
+    Color 1.0 0.7 0.0
+    Size 64
+    SecondarySize 72
+    Chance 0.3
+	Attenuate 1 //True
+}
+
+FlickerLight NUKEROCKET_X2
+{
+    Color 0.5 0.1 0.0
+    Size 96
+    SecondarySize 80
+    Chance 0.3
+	Attenuate 1 //True
+}
+
+FlickerLight NUKEROCKET_X3
+{
+    Color 0.3 0.0 0.0
+    Size 128
+    SecondarySize 104
+    Chance 0.3
+	Attenuate 1 //True
+}
+
+PointLight NukeExplosion
+{
+	Color 1.0 0.7 0.0
+	Size 256
+	Attenuate 1 //True
+}
+
+Object NuclearMissileShot
+{
+	Frame NKE1A { Light NukeExplosion }
+	Frame NKE1B { Light NukeExplosion }
+	Frame NKE1C { Light NukeExplosion }
+	Frame NKE1D { Light NUKEROCKET_X3 }
+	Frame NKE1E { Light NUKEROCKET_X3 }
+	Frame NKE1F { Light NUKEROCKET_X2 }
+	Frame NKE1G { Light NUKEROCKET_X2 }
+	Frame NKE1H { Light NUKEROCKET_X2 }
+	Frame NKE1I { Light NUKEROCKET_X2 }
+	Frame NKE1J { Light NUKEROCKET_X1 }
+	Frame NKE1K { Light NUKEROCKET_X1 }
+	Frame NKE1L { Light NUKEROCKET_X1 }
+	Frame NKE1M { Light NUKEROCKET_X1 }
+	Frame NKE1N { Light NUKEROCKET }
+	Frame NKE1O { Light NUKEROCKET }
+	Frame NKE1P { Light NUKEROCKET }
+	Frame NKE1Q { Light NUKEROCKET }
+	//Air detonation
+	Frame AXPLA { Light NukeExplosion }
+	Frame AXPLB { Light NukeExplosion }
+	Frame AXPLC { Light NukeExplosion }
+	Frame AXPLD { Light NukeExplosion }
+	Frame AXPLE { Light NukeExplosion }
+	Frame AXPLF { Light NukeExplosion }
+	Frame AXPLG { Light NukeExplosion }
+	Frame AXPLH { Light NukeExplosion }
+	Frame AXPLI { Light NukeExplosion }
+	Frame AXPLJ { Light NukeExplosion }
+	Frame AXPLK { Light NUKEROCKET_X3 }
+	Frame AXPLL { Light NUKEROCKET_X3 }
+	Frame AXPLM { Light NUKEROCKET_X3 }
+}
+
+Object NukeFire
+{
+	Frame NKFR { Light NUKEROCKET }
+}
+
+Object NukeExplosionGenerator
+{
+	Frame ROKE { Light NUKEROCKET }
+}
+
+Object NukeWall
+{
+	Frame FLWS { Light NUKEROCKET }
+	Frame FLWE { Light NUKEROCKET_X1 }
+}
